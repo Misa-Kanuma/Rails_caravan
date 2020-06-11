@@ -14,14 +14,11 @@ class BlogsController < ApplicationController
   	@blog = Blog.new
   end
 
-  def create
-  end
-
   def edit
   end
 
-def cr4eate
-  	log = Blog.new(blog_paragrams)
+  def create
+  	blog = Blog.new(blog_paragrams)
   	blog.save
   	redirect_to blogs_path
   end
@@ -29,5 +26,5 @@ def cr4eate
   private
   def blog_params
   	params.require(:blog).permit(:title, :category, :body)
-end
+  end
 end
