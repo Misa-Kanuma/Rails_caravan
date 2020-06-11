@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ /* common */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +33,7 @@ header, nav, h2, .main-visual, footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 /* common */
- 
+
 /* header */
 header {
   position: relative;
@@ -63,7 +65,7 @@ header .headline{
   margin: 0 20px;
 }
 /* header */
- 
+
 /*main-visual*/
 .main-visual {
   width: 100%;
@@ -87,7 +89,7 @@ header .headline{
   margin-top: 30px;
 }
 /*main-visual*/
- 
+
 /*main common*/
 main {
   width: 800px;
@@ -95,7 +97,7 @@ main {
   padding: 70px 0;
 }
 /*main common*/
- 
+
 /*blogs*/
 .blog {
   width: 540px;
@@ -122,13 +124,27 @@ main {
   background-size: cover;
   height: 180px;
 }
+.blog-item:nth-child(1) .blog-image {
+  background-image: url(img/forest.jpg);
+}
+.blog-item:nth-child(2) .blog-image {
+  background-image: url(img/desert.jpg);
+}
+.blog-item:nth-child(3) .blog-image {
+  background-image: url(img/sunset.jpg);
+}
+.blog-item:nth-child(4) .blog-image {
+  background-image: url(img/italy.jpg);
+}
+.blog-item:nth-child(5) .blog-image {
+  background-image: url(img/asia.jpg);
+}
 .blog-text-headline {
   padding-bottom: 15px;
 }
 .blog-text {
   float: left;
   padding: 30px 0 0 25px;
-  width: calc(100% - 277px);
 }
 .blog-date {
   display: inline-block;
@@ -157,7 +173,7 @@ main {
   line-height: 30px;
 }
 /*blogs*/
- 
+
 /*sidebar*/
 .sidebar {
   width: 230px;
@@ -210,7 +226,7 @@ main {
   background-image: url(img/road.jpg);
 }
 /*sidebar*/
- 
+
 /*footer*/
 footer {
   text-align: center;
@@ -221,7 +237,7 @@ footer {
   color: #fff;
 }
 /*footer*/
- 
+
 /*---show.html.erb---*/
 .single-blog {
   float: left;
