@@ -8,7 +8,7 @@
     <i class="fa fa-instagram"></i>
   </div>
 </header>
- 
+
 <nav>
   <ul class="nav-list">
     <li class="nav-list-item">
@@ -18,7 +18,7 @@
     <li class="nav-list-item">Topic</li>
   </ul>
 </nav>
- 
+
 <div class="main-visual">
   <div class="main-visual-content">
     <p class="main-visual-text">
@@ -50,6 +50,7 @@
     <p class="single-text">
       <%= @blog.body %>
     </p>
+    <%= link_to "編集", edit_blog_path(@blog), method: dele %>
     <a href="#">編集</a>
     <a href="#">削除</a>
     <div class="author-case clearfix">
